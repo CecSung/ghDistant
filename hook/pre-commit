@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+# Hook pre-commit : création d'un fichier commitInfo.txt si l'utilisateur confirme
+
+read -p "Ajouter l'info de vérification dans ce commit (y/[n]?" yn </dev/tty
+yn=${yn:n}
+
+case $yn in 
+	[Yy]*)
+		mkdir -p suivi
+		echo "Commit vérifié le $(date)" > suivi/commitInfo.txt
+		git add suivi/commitInfo.txt
+		exit 0;;
+	[Nn]*)
+		exit 0;;
+esac
+exit 0
