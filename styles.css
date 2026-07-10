@@ -5,6 +5,7 @@
   height: 200px;
   width: 200px;
   background-color: green;
+  border: 1px solid rgb(21, 209, 21);
 }
 
 .card_title {
