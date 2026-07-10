@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   //Fix #1 : Passer la couleur de fond en cyan
   background-color: cyan;
   border: 1px solid rgb(21, 209, 21);
